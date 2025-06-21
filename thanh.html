@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Cá Nhân | Nguyễn Tiến Thành</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+
+    <!-- ========== HEADER & NAVBAR: Thanh điều hướng chính của trang ========== -->
+    <header class="bg-white/80 backdrop-blur-lg shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-teal-600">Thành Nguyễn</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#about" class="hover:text-teal-600 transition-colors duration-300">Giới thiệu</a></li>
+                <li><a href="#skills" class="hover:text-teal-600 transition-colors duration-300">Kỹ năng</a></li>
+                <li><a href="#projects" class="hover:text-teal-600 transition-colors duration-300">Dự án</a></li>
+                <li><a href="#contact" class="hover:text-teal-600 transition-colors duration-300">Liên hệ</a></li>
+            </ul>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <ul class="px-6 pb-4 space-y-2">
+                 <li><a href="#about" class="block hover:text-teal-600 transition-colors duration-300">Giới thiệu</a></li>
+                <li><a href="#skills" class="block hover:text-teal-600 transition-colors duration-300">Kỹ năng</a></li>
+                <li><a href="#projects" class="block hover:text-teal-600 transition-colors duration-300">Dự án</a></li>
+                <li><a href="#contact" class="block hover:text-teal-600 transition-colors duration-300">Liên hệ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <!-- ========== BANNER SECTION: Banner với ảnh nền, ảnh đại diện, tên, chức danh ========== -->
+        <section id="banner" class="text-center py-20 relative overflow-hidden">
+            <img src="uth.jpg" alt="Phông nền UTH" class="absolute inset-0 w-full h-full object-cover opacity-70 -z-10">
+            <img src="ảnh face.jpg" alt="Ảnh đại diện Nguyễn Tiến Thành" class="w-40 h-40 mx-auto rounded-full shadow-xl mb-6 border-4 border-white relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-2 relative z-10">Nguyễn Tiến Thành</h1>
+            <p class="text-xl text-black font-bold relative z-10">Sinh viên Công nghệ Thông tin</p>
+        </section>
+
+        <!-- ========== ABOUT ME SECTION: Thông tin cá nhân và mục tiêu nghề nghiệp ========== -->
+        <section id="about" class="section my-16 p-8 bg-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold mb-6 text-center text-gray-800 border-b-2 border-teal-500 pb-2">Thông tin cá nhân</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="mb-4 text-lg">Xin chào! Tôi là Thành, một sinh viên đầy nhiệt huyết với chuyên ngành Công nghệ thông tin. Tôi luôn mong muốn được học hỏi, khám phá những công nghệ mới và áp dụng kiến thức vào việc tạo ra những sản phẩm hữu ích.</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fa-solid fa-cake-candles text-teal-500 w-5 mr-2"></i><strong>Ngày sinh:</strong> 24/12/2005</li>
+                        <li><i class="fa-solid fa-school text-teal-500 w-5 mr-2"></i><strong>Trường:</strong> Đại học Giao thông Vận tải TP. Hồ Chí Minh</li>
+                        <li><i class="fa-solid fa-book-open text-teal-500 w-5 mr-2"></i><strong>Ngành:</strong> Công nghệ Thông tin</li>
+                        <li><i class="fa-solid fa-location-dot text-teal-500 w-5 mr-2"></i><strong>Địa chỉ:</strong> Quận 12, TP. Hồ Chí Minh</li>
+                    </ul>
+                </div>
+                <div class="mt-8 md:mt-0">
+                    <div class="p-6 bg-teal-50 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-3 text-teal-800">Mục tiêu nghề nghiệp</h3>
+                        <p class="text-teal-900">Áp dụng kiến thức đã học để trở thành một Lập trình viên Full-stack chuyên nghiệp, có thể xây dựng và phát triển các ứng dụng web hoàn chỉnh. Mong muốn được làm việc trong một môi trường năng động, có cơ hội học hỏi và phát triển bản thân.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SKILLS SECTION: Kỹ năng & Ngôn ngữ ========== -->
+        <section id="skills" class="section my-16 p-8">
+            <h2 class="text-3xl font-bold mb-8 text-center text-gray-800 border-b-2 border-teal-500 pb-2">Kỹ năng & Ngôn ngữ</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 text-center">
+                <!-- Thêm các kỹ năng ở đây -->
+                <div class="skill-item bg-white p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <i class="fab fa-html5 text-5xl text-orange-500 mb-2"></i>
+                    <p class="font-semibold">HTML5</p>
+                </div>
+                <div class="skill-item bg-white p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <i class="fab fa-css3-alt text-5xl text-blue-500 mb-2"></i>
+                    <p class="font-semibold">CSS3</p>
+                </div>
+                 <div class="skill-item bg-white p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <i class="fab fa-js text-5xl text-yellow-500 mb-2"></i>
+                    <p class="font-semibold">JavaScript</p>
+                </div>
+                <div class="skill-item bg-white p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <i class="fab fa-react text-5xl text-sky-500 mb-2"></i>
+                    <p class="font-semibold">ReactJS</p>
+                </div>
+                <div class="skill-item bg-white p-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <i class="fab fa-java text-5xl text-red-500 mb-2"></i>
+                    <p class="font-semibold">Java</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROJECTS SECTION: Dự án đã thực hiện ========== -->
+        <section id="projects" class="section my-16 p-8 bg-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold mb-8 text-center text-gray-800 border-b-2 border-teal-500 pb-2">Dự án đã thực hiện</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dự án 1 (Placeholder) -->
+                <div class="project-card border border-gray-200 rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <img src="chat_bot.jpg" alt="Hình ảnh dự án 1 - Chat Bot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Website Chat Bot Học Sinh</h3>
+                        <p class="text-gray-700 mb-2">Trong bối cảnh chuyển đổi số mạnh mẽ của ngành giáo dục, chatbot học sinh nổi lên như một công cụ hỗ trợ đắc lực, mang lại nhiều lợi ích thiết thực cho cả học sinh, sinh viên và các cơ sở đào tạo tại Việt Nam. Được tích hợp trí tuệ nhân tạo (AI), những "trợ lý ảo" này không chỉ cung cấp thông tin tức thì mà còn cá nhân hóa trải nghiệm học tập, góp phần nâng cao hiệu quả dạy và học.</p>
+                        <p class="text-gray-600 mb-4">Xây dựng website chat bot hỗ trợ học sinh hỏi đáp thông tin học tập, sử dụng HTML, CSS, JavaScript và tích hợp AI đơn giản.</p>
+                        <button onclick="toggleProjectDetail('project1-detail')" class="font-semibold text-teal-600 hover:text-teal-800 focus:outline-none">Xem chi tiết <i class="fas fa-arrow-right ml-1"></i></button>
+                        <div id="project1-detail" class="hidden mt-4 text-gray-700 text-sm bg-teal-50 p-4 rounded-lg shadow">
+                            <h4 class="font-bold mb-2">Lợi Ích Vượt Trội Của Chatbot Trong Giáo Dục</h4>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>Hỗ trợ 24/7: Giải đáp thắc mắc của học sinh mọi lúc, mọi nơi, vượt qua rào cản về thời gian và địa lý.</li>
+                                <li>Cá nhân hóa lộ trình học tập: Đề xuất bài giảng, bài tập và tài liệu phù hợp với năng lực và tiến độ từng cá nhân.</li>
+                                <li>Giảm tải cho đội ngũ giảng viên và tư vấn: Tự động hóa trả lời các câu hỏi thường gặp, giúp giáo viên tập trung vào chuyên môn sâu.</li>
+                                <li>Tăng cường tương tác và gắn kết: Tạo kênh giao tiếp thân thiện, khuyến khích học sinh chủ động hỏi và tìm kiếm thông tin.</li>
+                                <li>Hỗ trợ tuyển sinh và hướng nghiệp: Cung cấp thông tin chi tiết về ngành học, chương trình đào tạo, thủ tục nhập học.</li>
+                            </ul>
+                            <h4 class="font-bold mb-2">Những Tính Năng Chính Của Một Website Chatbot Học Sinh Hiệu Quả</h4>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>Giải đáp kiến thức: Trả lời các câu hỏi về bài giảng, công thức, định nghĩa, chủ đề học thuật.</li>
+                                <li>Hỗ trợ làm bài tập: Gợi ý, hướng dẫn giải bài tập, kiểm tra đáp án.</li>
+                                <li>Cung cấp thông tin hành chính: Thông báo lịch học, lịch thi, sự kiện, quy định.</li>
+                                <li>Tư vấn tâm lý và sức khỏe học đường: Lời khuyên ban đầu, thông tin dịch vụ hỗ trợ tâm lý.</li>
+                                <li>Học ngoại ngữ: Luyện giao tiếp, kiểm tra ngữ pháp, từ vựng.</li>
+                                <li>Hướng nghiệp: Thông tin ngành nghề, xu hướng thị trường lao động, kỹ năng cần thiết.</li>
+                            </ul>
+                            <h4 class="font-bold mb-2">Các Chatbot Phổ Biến và Hiệu Quả Cho Học Sinh Việt Nam</h4>
+                            <div class="overflow-x-auto mb-4">
+                            <table class="min-w-full text-left text-xs border border-gray-300">
+                                <thead class="bg-gray-100">
+                                    <tr>
+                                        <th class="py-1 px-2 border">Loại Chatbot</th>
+                                        <th class="py-1 px-2 border">Ví dụ</th>
+                                        <th class="py-1 px-2 border">Mô tả</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="py-1 px-2 border">Chatbot AI đa năng</td>
+                                        <td class="py-1 px-2 border">ChatGPT, Google Gemini</td>
+                                        <td class="py-1 px-2 border">Trả lời câu hỏi phức tạp, hỗ trợ viết luận, lập trình, sáng tạo nội dung.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-1 px-2 border">Chatbot chuyên biệt cho giáo dục</td>
+                                        <td class="py-1 px-2 border">Socratic, Mathway</td>
+                                        <td class="py-1 px-2 border">Giải bài tập, đặc biệt các môn tự nhiên như Toán, Lý, Hóa.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-1 px-2 border">Chatbot luyện ngoại ngữ</td>
+                                        <td class="py-1 px-2 border">ELSA Speak, Duolingo</td>
+                                        <td class="py-1 px-2 border">Cải thiện phát âm, giao tiếp, từ vựng tiếng Anh.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-1 px-2 border">Chatbot của các trường đại học</td>
+                                        <td class="py-1 px-2 border">UEH AI Chatbot</td>
+                                        <td class="py-1 px-2 border">Cung cấp thông tin tuyển sinh, hướng nghiệp, các vấn đề nhà trường.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                            <h4 class="font-bold mb-2">Nền Tảng Xây Dựng Chatbot Cho Website Giáo Dục</h4>
+                            <ul class="list-disc list-inside mb-2">
+                                <li>FPT.AI: Nền tảng Việt Nam, xử lý ngôn ngữ tự nhiên tiếng Việt tốt.</li>
+                                <li>Botpress: Mã nguồn mở linh hoạt, tùy chỉnh cao.</li>
+                                <li>Dialogflow của Google: Công cụ mạnh mẽ xây dựng chatbot thông minh.</li>
+                            </ul>
+                            <p>Sự phát triển của chatbot học sinh đang mở ra một chương mới cho giáo dục Việt Nam, nơi công nghệ và tri thức kết hợp để tạo ra môi trường học tập linh hoạt, hiệu quả và hấp dẫn hơn. Việc ứng dụng rộng rãi công cụ này hứa hẹn sẽ góp phần không nhỏ vào việc nâng cao chất lượng nguồn nhân lực trong tương lai.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dự án 2 (Placeholder) -->
+                <div class="project-card border border-gray-200 rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <img src="thu_vien.jpg" alt="Hình ảnh dự án 2 - Thư viện" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Thiết Kế Mạng Cho Thư Viện Trường Đại Học Quận 12</h3>
+                        <p class="text-gray-600 mb-4">Thiết kế, triển khai hệ thống mạng LAN và wifi cho thư viện trường đại học tại Quận 12, đảm bảo kết nối ổn định và bảo mật.</p>
+                        <button onclick="toggleProjectDetail('project2-detail')" class="font-semibold text-teal-600 hover:text-teal-800 focus:outline-none">Xem chi tiết <i class="fas fa-arrow-right ml-1"></i></button>
+                        <div id="project2-detail" class="hidden mt-4 text-gray-700 text-sm bg-teal-50 p-4 rounded-lg shadow">
+                            Dự án Thiết kế Mạng Thư viện Đại học Quận 12<br>
+                            Dự án nhằm xây dựng một hệ thống mạng hiện đại cho thư viện hai tầng của Trường Đại học Quận 12, đáp ứng nhu cầu học tập, nghiên cứu trong thời đại số.<br>
+                            <strong>1. Bối cảnh và Yêu cầu chính</strong><br>
+                            • Quy mô phục vụ: Hệ thống cần hỗ trợ khoảng 100 người dùng đồng thời, bao gồm:<br>
+                            &nbsp;&nbsp;o 13 máy tính để bàn.<br>
+                            &nbsp;&nbsp;o 5 máy chủ chuyên dụng.<br>
+                            &nbsp;&nbsp;o 2 điểm truy cập Wi-Fi (Access Point), mỗi điểm hỗ trợ 25 thiết bị.<br>
+                            • Các khu vực chức năng: Mạng phải phủ sóng và đáp ứng yêu cầu riêng của từng khu vực: Phòng Hành chính, Phòng Kỹ thuật, Phòng Máy tính công cộng và Phòng Đọc sách.<br>
+                            • Dịch vụ cần hỗ trợ:<br>
+                            &nbsp;&nbsp;o Truy cập Internet tốc độ cao.<br>
+                            &nbsp;&nbsp;o Hệ thống quản lý thư viện (LMS).<br>
+                            &nbsp;&nbsp;o Tra cứu tài liệu trực tuyến (OPAC).<br>
+                            &nbsp;&nbsp;o Truy cập các cơ sở dữ liệu học thuật.<br>
+                            • Hiệu suất:<br>
+                            &nbsp;&nbsp;o Tốc độ mạng LAN: 1 Gbps.<br>
+                            &nbsp;&nbsp;o Tốc độ mạng WAN (Internet): 200 Mbps.<br>
+                            &nbsp;&nbsp;o Độ ổn định: 99.9%.<br>
+                            • Bảo mật: Kiểm soát truy cập người dùng, sử dụng tường lửa (Firewall) và áp dụng các chuẩn bảo mật Wi-Fi mạnh như WPA3.<br>
+                            • Khả năng mở rộng: Thiết kế phải linh hoạt để dễ dàng nâng cấp trong tương lai.<br>
+                            <strong>2. Giải pháp Thiết kế được đề xuất</strong><br>
+                            • Mô hình mạng:<br>
+                            &nbsp;&nbsp;o Áp dụng mô hình phân cấp 3 lớp (Lõi - Phân phối - Truy cập) của Cisco để đảm bảo hiệu suất, dễ quản lý và mở rộng.<br>
+                            &nbsp;&nbsp;o Sử dụng topo mạng hình sao (Star Topology) cho kết nối vật lý, giúp hệ thống ổn định và dễ bảo trì.<br>
+                            • Công nghệ kết nối:<br>
+                            &nbsp;&nbsp;o Mạng có dây (LAN): Sử dụng cáp mạng UTP Cat6 để đạt tốc độ 1 Gbps.<br>
+                            &nbsp;&nbsp;o Mạng không dây (Wi-Fi): Triển khai Wi-Fi chuẩn 802.11ac để phục vụ người dùng di động.<br>
+                            &nbsp;&nbsp;o Mạng diện rộng (WAN): Thuê đường truyền cáp quang FTTH với băng thông tối thiểu 200 Mbps.<br>
+                            • Phân vùng và Bảo mật:<br>
+                            &nbsp;&nbsp;o Xây dựng 4 mạng LAN ảo (VLAN) để tách biệt lưu lượng giữa các khu vực chức năng (hành chính, kỹ thuật, máy tính công cộng, phòng đọc), giúp tăng cường an ninh và hiệu quả quản lý.<br>
+                            <strong>3. Cấu trúc và Bố trí thiết bị</strong><br>
+                            • Tầng trệt: Là trung tâm của hệ thống mạng.<br>
+                            &nbsp;&nbsp;o Phòng Kỹ thuật: Đặt các thiết bị lõi như Router, Firewall, Switch trung tâm, và các máy chủ.<br>
+                            &nbsp;&nbsp;o Phòng Máy tính công cộng & Phòng Hành chính: Được kết nối vào hệ thống trung tâm.<br>
+                            • Tầng 1: Phục vụ người dùng cuối.<br>
+                            &nbsp;&nbsp;o Phòng Đọc sách & Kho lưu trữ: Bố trí Switch riêng, các máy trạm và các điểm truy cập Wi-Fi.
+                        </div>
+                    </div>
+                </div>
+                <!-- Dự án 3 (Placeholder) -->
+                <div class="project-card border border-gray-200 rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <img src="cua_hang_dt.jpg" alt="Hình ảnh dự án 3 - Cửa hàng điện tử" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Cửa hàng điện thoại TTNAK</h3>
+                        <p class="text-gray-700 mb-2">Vào ngày 01/11/2024 tới, cửa hàng điện thoại TTNAK sẽ chính thức khai trương, chuyên cung cấp các dòng điện thoại từ nhiều thương hiệu uy tín cùng các loại phụ kiện điện tử. Với tiêu chí chất lượng hàng đầu, giá cả phải chăng và đội ngũ nhân viên thân thiện, TTNAK cam kết mang lại sự hài lòng cho mọi khách hàng. Đặc biệt, trong ngày khai trương sẽ có nhiều phần quà hấp dẫn dành cho những vị khách đầu tiên đến mua sắm.</p>
+                        <button onclick="toggleProjectDetail('project3-detail')" class="font-semibold text-teal-600 hover:text-teal-800 focus:outline-none">Xem chi tiết <i class="fas fa-arrow-right ml-1"></i></button>
+                        <div id="project3-detail" class="hidden mt-4 text-gray-700 text-sm bg-teal-50 p-4 rounded-lg shadow">
+                            Xây dựng hệ thống phần mềm quản lý toàn diện cho cửa hàng điện thoại TTNAK. Mục tiêu chính là giải quyết những thách thức của một doanh nghiệp mới thành lập đang vận hành thủ công và kém hiệu quả, đặc biệt là các vấn đề cốt lõi như quản lý tồn kho thiếu chính xác, thông tin khách hàng rời rạc và quy trình xử lý đơn hàng chậm chạp.<br><br>
+                            Để khắc phục các nhược điểm trên, giải pháp được đề xuất là một hệ thống tích hợp các chức năng quan trọng vào một nền tảng duy nhất. Các chức năng này bao gồm quản lý bán hàng và đơn hàng, cập nhật kho theo thời gian thực, chăm sóc khách hàng (CRM), xử lý dịch vụ sau bán hàng như bảo hành và khiếu nại, cùng với các công cụ quản lý nhân viên, nhà cung cấp và tạo báo cáo doanh thu chi tiết.<br><br>
+                            Dựa trên việc phân tích kỹ lưỡng vai trò và các kịch bản sử dụng (use case) của từng tác nhân—từ khách hàng, nhân viên, quản lý đến nhà cung cấp—bản phân tích đã đặt ra một nền tảng vững chắc. Từ đó, có thể phát triển một giải pháp công nghệ nhanh chóng, bảo mật và hiệu quả, hướng đến mục tiêu cuối cùng là hiện đại hóa, tăng năng suất và chuyên nghiệp hóa toàn bộ hoạt động kinh doanh của cửa hàng.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== OTHER SECTIONS: Chứng chỉ, Sở thích ========== -->
+         <section id="other-info" class="section my-16 grid md:grid-cols-2 gap-8">
+             <!-- Chứng chỉ & Giải thưởng -->
+            <div class="p-8 bg-white rounded-xl shadow-lg">
+                <h2 class="text-2xl font-bold mb-4 text-center text-gray-800">Chứng chỉ & Giải thưởng</h2>
+                 <ul class="space-y-3 text-gray-700">
+                    <li><i class="fa-solid fa-award text-yellow-500 w-5 mr-2"></i>(Placeholder) Chứng chỉ hoàn thành khóa học Lập trình Web cơ bản</li>
+                    <li><i class="fa-solid fa-award text-yellow-500 w-5 mr-2"></i>(Placeholder) Giải khuyến khích cuộc thi Sáng tạo Khoa học Kỹ thuật cấp trường</li>
+                </ul>
+            </div>
+            <!-- Sở thích -->
+            <div class="p-8 bg-white rounded-xl shadow-lg">
+                <h2 class="text-2xl font-bold mb-4 text-center text-gray-800">Sở thích</h2>
+                 <div class="flex justify-around items-center text-center">
+                     <div>
+                         <i class="fas fa-gamepad text-4xl text-teal-500 mb-2"></i>
+                         <p>Chơi game</p>
+                     </div>
+                     <div>
+                         <i class="fas fa-music text-4xl text-teal-500 mb-2"></i>
+                         <p>Nghe nhạc</p>
+                     </div>
+                     <div>
+                         <i class="fas fa-book text-4xl text-teal-500 mb-2"></i>
+                         <p>Đọc sách</p>
+                     </div>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER: Thông tin liên hệ và mạng xã hội ========== -->
+    <footer id="contact" class="bg-gray-800 text-white pt-12 pb-8">
+        <div class="container mx-auto px-6 text-center">
+             <h2 class="text-3xl font-bold mb-6">Liên hệ</h2>
+             <p class="mb-8 max-w-lg mx-auto">Rất mong được kết nối và nhận được cơ hội hợp tác từ quý công ty. Vui lòng liên hệ với tôi qua:</p>
+             <div class="grid md:grid-cols-3 gap-8 mb-8">
+                 <div class="contact-item">
+                    <i class="fas fa-phone text-3xl mb-3 text-teal-400"></i>
+                    <h3 class="font-semibold text-xl">Điện thoại</h3>
+                    <a href="tel:0989375570" class="text-teal-300 hover:text-white">0989 375 570</a>
+                 </div>
+                 <div class="contact-item">
+                    <i class="fas fa-envelope text-3xl mb-3 text-teal-400"></i>
+                    <h3 class="font-semibold text-xl">Email</h3>
+                    <a href="mailto:thanhnt8821@ut.edu.vn" class="text-teal-300 hover:text-white">thanhnt8821@ut.edu.vn</a>
+                 </div>
+                 <div class="contact-item">
+                    <i class="fas fa-map-marker-alt text-3xl mb-3 text-teal-400"></i>
+                    <h3 class="font-semibold text-xl">Địa chỉ</h3>
+                    <p class="text-teal-300">205 Nguyễn Thị Đặng, P. Tân Thới Hiệp, Q.12, TP.HCM</p>
+                 </div>
+             </div>
+             <!-- Social Media Links -->
+             <div class="social-links space-x-6">
+                <a href="https://www.facebook.com/share/1Hs71U5WoF/?mibextid=wwXIfr" target="_blank" class="text-3xl hover:text-teal-400 transition-colors"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" class="text-3xl hover:text-teal-400 transition-colors"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" class="text-3xl hover:text-teal-400 transition-colors"><i class="fab fa-linkedin-in"></i></a>
+             </div>
+             <div class="mt-10 border-t border-gray-700 pt-6">
+                 <p>&copy; 2024 Nguyễn Tiến Thành. Thiết kế và xây dựng bởi chính tôi.</p>
+             </div>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPT: Xử lý menu mobile và hiệu ứng xem chi tiết dự án ========== -->
+    <script src="script.js" defer></script>
+    <script>
+    function toggleProjectDetail(id) {
+        var el = document.getElementById(id);
+        if (el.classList.contains('hidden')) {
+            el.classList.remove('hidden');
+        } else {
+            el.classList.add('hidden');
+        }
+    }
+    </script>
+</body>
+</html>

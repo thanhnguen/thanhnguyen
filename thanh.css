@@ -1,0 +1,17 @@
+/* Sử dụng font Inter làm font chữ mặc định */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* Màu nền xám nhạt */
+}
+
+/* Hiệu ứng cho các section khi cuộn tới */
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
